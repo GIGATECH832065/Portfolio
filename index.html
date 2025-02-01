@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brian R. Wilson Portfolio</title>
+    <style>
+        @font-face {
+            font-family: 'Matrix';
+            src: url('matrix.ttf') format('truetype');
+        }
+        
+        body {
+            background: url('matrix.gif') no-repeat center center fixed;
+            background-size: cover;
+            color: #ffffff;
+            font-family: Georgia, serif;
+            font-weight: bold;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        
+        header, footer {
+            background-color: #3D087B;
+            padding: 20px;
+        }
+        
+        header h1 {
+            font-family: 'Matrix', sans-serif;
+        }
+        
+        .container {
+            padding: 40px;
+        }
+        
+        .card {
+            background-color: #1e1e1e;
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            max-width: 600px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+        }
+        
+        a {
+            color: #9a67ea;
+            text-decoration: none;
+        }
+        
+        .pulse {
+            background-color: #9a67ea;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            animation: pulse 1.5s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Brian R. Wilson Portfolio</h1>
+    </header>
+    
+    <div class="container">
+        <div class="card">
+            <h2>About Me</h2>
+            <p>Welcome to my portfolio! I am a passionate aspiring Web Developer. Please enjoy my projects.</p>
+        </div>
+        
+        <div class="card">
+            <h2>Projects</h2>
+            <p>Here are some of my latest works.</p>
+            <a href="https://github.com/GIGATECH832065" target="_blank">
+                <button class="pulse">Projects</button>
+            </a>
+        </div>
+        
+        <div class="card">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:b.wilson32129@gmail.com?subject=Portfolio%20Inquiry&body=Hello%20Brian,">Contact Me</a></p>
+        </div>
+        
+        <a href="resume.pdf" target="_blank">
+            <button class="pulse">Resume</button>
+        </a>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 GIGATECH. All rights reserved.</p>
+    </footer>
+</body>
+</html>
